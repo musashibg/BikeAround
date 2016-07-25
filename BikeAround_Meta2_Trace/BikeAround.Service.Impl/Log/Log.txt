@@ -1,0 +1,86 @@
+[6/18/2016 11:03 PM TRACE] Entering BikeAround.Service.Impl.BikeAroundServiceImpl.GetCurrentUser()
+[6/18/2016 11:03 PM TRACE] Exiting BikeAround.Service.Impl.BikeAroundServiceImpl.GetCurrentUser() with result BikeAround.Service.User [UserID = 1]
+[6/18/2016 11:03 PM TRACE] Entering BikeAround.Service.Impl.BikeAroundServiceImpl.GetCurrentUser()
+[6/18/2016 11:03 PM TRACE] Exiting BikeAround.Service.Impl.BikeAroundServiceImpl.GetCurrentUser() with result BikeAround.Service.User [UserID = 1]
+[6/18/2016 11:03 PM TRACE] Entering BikeAround.Service.Impl.BikeAroundServiceImpl.GetCurrentUserBikes()
+[6/18/2016 11:03 PM TRACE] Exiting BikeAround.Service.Impl.BikeAroundServiceImpl.GetCurrentUserBikes() with result BikeAround.Service.Bike[]
+[6/18/2016 11:04 PM TRACE] Entering BikeAround.Service.Impl.BikeAroundServiceImpl.GetBikeTrips(1)
+[6/18/2016 11:04 PM TRACE] Exiting BikeAround.Service.Impl.BikeAroundServiceImpl.GetBikeTrips(1) with result BikeAround.Service.Trip[]
+[6/18/2016 11:04 PM TRACE] Entering BikeAround.Service.Impl.BikeAroundServiceImpl.GetCurrentUser()
+[6/18/2016 11:04 PM TRACE] Exiting BikeAround.Service.Impl.BikeAroundServiceImpl.GetCurrentUser() with result BikeAround.Service.User [UserID = 1]
+[6/18/2016 11:04 PM TRACE] Entering BikeAround.Service.Impl.BikeAroundServiceImpl.GetCurrentUserBikes()
+[6/18/2016 11:04 PM TRACE] Exiting BikeAround.Service.Impl.BikeAroundServiceImpl.GetCurrentUserBikes() with result BikeAround.Service.Bike[]
+[6/18/2016 11:04 PM TRACE] Entering BikeAround.Service.Impl.BikeAroundServiceImpl.FindAvailableBikes(2700)
+[6/18/2016 11:04 PM TRACE] Exiting BikeAround.Service.Impl.BikeAroundServiceImpl.FindAvailableBikes(2700) with result BikeAround.Service.Bike[]
+[6/18/2016 11:04 PM TRACE] Entering BikeAround.Service.Impl.BikeAroundServiceImpl.GetUser(1)
+[6/18/2016 11:04 PM TRACE] Exiting BikeAround.Service.Impl.BikeAroundServiceImpl.GetUser(1) with result BikeAround.Service.User [UserID = 1]
+[6/18/2016 11:06 PM TRACE] Entering BikeAround.Service.Impl.BikeAroundServiceImpl.RegisterUser(BikeAround.Service.User [UserID = 0], <password>)
+[6/18/2016 11:06 PM TRACE] Exiting BikeAround.Service.Impl.BikeAroundServiceImpl.RegisterUser(BikeAround.Service.User [UserID = 0], <password>) with result BikeAround.Service.User [UserID = 2]
+[6/18/2016 11:07 PM TRACE] Entering BikeAround.Service.Impl.BikeAroundServiceImpl.GetCurrentUser()
+[6/18/2016 11:07 PM TRACE] Exiting BikeAround.Service.Impl.BikeAroundServiceImpl.GetCurrentUser() with result BikeAround.Service.User [UserID = 2]
+[6/18/2016 11:07 PM TRACE] Entering BikeAround.Service.Impl.BikeAroundServiceImpl.GetCurrentUser()
+[6/18/2016 11:07 PM TRACE] Exiting BikeAround.Service.Impl.BikeAroundServiceImpl.GetCurrentUser() with result BikeAround.Service.User [UserID = 2]
+[6/18/2016 11:07 PM TRACE] Entering BikeAround.Service.Impl.BikeAroundServiceImpl.GetCurrentUserBikes()
+[6/18/2016 11:07 PM TRACE] Exiting BikeAround.Service.Impl.BikeAroundServiceImpl.GetCurrentUserBikes() with result BikeAround.Service.Bike[]
+[6/18/2016 11:07 PM TRACE] Entering BikeAround.Service.Impl.BikeAroundServiceImpl.FindAvailableBikes(2700)
+[6/18/2016 11:07 PM TRACE] Exiting BikeAround.Service.Impl.BikeAroundServiceImpl.FindAvailableBikes(2700) with result BikeAround.Service.Bike[]
+[6/18/2016 11:07 PM TRACE] Entering BikeAround.Service.Impl.BikeAroundServiceImpl.GetUser(1)
+[6/18/2016 11:07 PM TRACE] Exiting BikeAround.Service.Impl.BikeAroundServiceImpl.GetUser(1) with result BikeAround.Service.User [UserID = 1]
+[6/18/2016 11:08 PM TRACE] Entering BikeAround.Service.Impl.BikeAroundServiceImpl.GetCurrentUserTrips()
+[6/18/2016 11:08 PM TRACE] Exiting BikeAround.Service.Impl.BikeAroundServiceImpl.GetCurrentUserTrips() with result BikeAround.Service.Trip[]
+[6/18/2016 11:08 PM TRACE] Entering BikeAround.Service.Impl.BikeAroundServiceImpl.GetCurrentUser()
+[6/18/2016 11:08 PM TRACE] Exiting BikeAround.Service.Impl.BikeAroundServiceImpl.GetCurrentUser() with result BikeAround.Service.User [UserID = 2]
+[6/18/2016 11:08 PM TRACE] Entering BikeAround.Service.Impl.BikeAroundServiceImpl.GetCurrentUserBikes()
+[6/18/2016 11:08 PM TRACE] Exiting BikeAround.Service.Impl.BikeAroundServiceImpl.GetCurrentUserBikes() with result BikeAround.Service.Bike[]
+[6/18/2016 11:08 PM TRACE] Entering BikeAround.Service.Impl.BikeAroundServiceImpl.GetCurrentUser()
+[6/18/2016 11:08 PM TRACE] Exiting BikeAround.Service.Impl.BikeAroundServiceImpl.GetCurrentUser() with result BikeAround.Service.User [UserID = 1]
+[6/18/2016 11:08 PM TRACE] Entering BikeAround.Service.Impl.BikeAroundServiceImpl.GetCurrentUser()
+[6/18/2016 11:08 PM TRACE] Exiting BikeAround.Service.Impl.BikeAroundServiceImpl.GetCurrentUser() with result BikeAround.Service.User [UserID = 1]
+[6/18/2016 11:08 PM TRACE] Entering BikeAround.Service.Impl.BikeAroundServiceImpl.GetCurrentUserBikes()
+[6/18/2016 11:08 PM TRACE] Exiting BikeAround.Service.Impl.BikeAroundServiceImpl.GetCurrentUserBikes() with result BikeAround.Service.Bike[]
+[6/18/2016 11:08 PM TRACE] Entering BikeAround.Service.Impl.BikeAroundServiceImpl.GetBikeTrips(1)
+[6/18/2016 11:08 PM TRACE] Exiting BikeAround.Service.Impl.BikeAroundServiceImpl.GetBikeTrips(1) with result BikeAround.Service.Trip[]
+[6/18/2016 11:08 PM TRACE] Entering BikeAround.Service.Impl.BikeAroundServiceImpl.GetCurrentUserBikes()
+[6/18/2016 11:08 PM TRACE] Exiting BikeAround.Service.Impl.BikeAroundServiceImpl.GetCurrentUserBikes() with result BikeAround.Service.Bike[]
+[6/18/2016 11:08 PM TRACE] Entering BikeAround.Service.Impl.BikeAroundServiceImpl.GetCurrentUserBikes()
+[6/18/2016 11:08 PM TRACE] Exiting BikeAround.Service.Impl.BikeAroundServiceImpl.GetCurrentUserBikes() with result BikeAround.Service.Bike[]
+[6/18/2016 11:15 PM TRACE] Entering BikeAround.Service.Impl.BikeAroundServiceImpl.GetCurrentUser()
+[6/18/2016 11:15 PM TRACE] Exiting BikeAround.Service.Impl.BikeAroundServiceImpl.GetCurrentUser() with result BikeAround.Service.User [UserID = 1]
+[6/18/2016 11:15 PM TRACE] Entering BikeAround.Service.Impl.BikeAroundServiceImpl.GetCurrentUser()
+[6/18/2016 11:15 PM TRACE] Exiting BikeAround.Service.Impl.BikeAroundServiceImpl.GetCurrentUser() with result BikeAround.Service.User [UserID = 1]
+[6/18/2016 11:15 PM TRACE] Entering BikeAround.Service.Impl.BikeAroundServiceImpl.GetCurrentUserBikes()
+[6/18/2016 11:15 PM TRACE] Exiting BikeAround.Service.Impl.BikeAroundServiceImpl.GetCurrentUserBikes() with result BikeAround.Service.Bike[]
+[6/19/2016 9:37 AM TRACE] Entering BikeAround.Service.Impl.BikeAroundServiceImpl.GetCurrentUser()
+[6/19/2016 9:37 AM TRACE] Exiting BikeAround.Service.Impl.BikeAroundServiceImpl.GetCurrentUser() with result BikeAround.Service.User [UserID = 2]
+[6/19/2016 9:38 AM TRACE] Entering BikeAround.Service.Impl.BikeAroundServiceImpl.GetCurrentUser()
+[6/19/2016 9:38 AM TRACE] Exiting BikeAround.Service.Impl.BikeAroundServiceImpl.GetCurrentUser() with result BikeAround.Service.User [UserID = 2]
+[6/19/2016 9:38 AM TRACE] Entering BikeAround.Service.Impl.BikeAroundServiceImpl.InitiateTrip(b2d8e22c-2665-4258-809c-2e381274e506, 040655ca-7838-4446-a365-073e0d0b10e9)
+[6/19/2016 9:38 AM TRACE] Exiting BikeAround.Service.Impl.BikeAroundServiceImpl.InitiateTrip(b2d8e22c-2665-4258-809c-2e381274e506, 040655ca-7838-4446-a365-073e0d0b10e9)
+[6/19/2016 11:54 AM TRACE] Entering BikeAround.Service.Impl.BikeAroundServiceImpl.TerminateTrip(040655ca-7838-4446-a365-073e0d0b10e9, 2100, Osterbrogade 45)
+[6/19/2016 11:54 AM TRACE] Exiting BikeAround.Service.Impl.BikeAroundServiceImpl.TerminateTrip(040655ca-7838-4446-a365-073e0d0b10e9, 2100, Osterbrogade 45)
+[6/19/2016 11:55 AM TRACE] Entering BikeAround.Service.Impl.BikeAroundServiceImpl.GetCurrentUser()
+[6/19/2016 11:55 AM TRACE] Exiting BikeAround.Service.Impl.BikeAroundServiceImpl.GetCurrentUser() with result BikeAround.Service.User [UserID = 1]
+[6/19/2016 11:55 AM TRACE] Entering BikeAround.Service.Impl.BikeAroundServiceImpl.GetCurrentUser()
+[6/19/2016 11:55 AM TRACE] Exiting BikeAround.Service.Impl.BikeAroundServiceImpl.GetCurrentUser() with result BikeAround.Service.User [UserID = 1]
+[6/19/2016 11:55 AM TRACE] Entering BikeAround.Service.Impl.BikeAroundServiceImpl.GetCurrentUserBikes()
+[6/19/2016 11:55 AM TRACE] Exiting BikeAround.Service.Impl.BikeAroundServiceImpl.GetCurrentUserBikes() with result BikeAround.Service.Bike[]
+[6/19/2016 11:55 AM TRACE] Entering BikeAround.Service.Impl.BikeAroundServiceImpl.GetBikeTrips(1)
+[6/19/2016 11:55 AM TRACE] Exiting BikeAround.Service.Impl.BikeAroundServiceImpl.GetBikeTrips(1) with result BikeAround.Service.Trip[]
+[6/19/2016 11:55 AM TRACE] Entering BikeAround.Service.Impl.BikeAroundServiceImpl.GetUser(2)
+[6/19/2016 11:55 AM TRACE] Exiting BikeAround.Service.Impl.BikeAroundServiceImpl.GetUser(2) with result BikeAround.Service.User [UserID = 2]
+[6/19/2016 11:55 AM TRACE] Entering BikeAround.Service.Impl.BikeAroundServiceImpl.GetCurrentUserBikes()
+[6/19/2016 11:55 AM TRACE] Exiting BikeAround.Service.Impl.BikeAroundServiceImpl.GetCurrentUserBikes() with result BikeAround.Service.Bike[]
+[6/19/2016 11:55 AM TRACE] Entering BikeAround.Service.Impl.BikeAroundServiceImpl.GetCurrentUserTrips()
+[6/19/2016 11:55 AM TRACE] Exiting BikeAround.Service.Impl.BikeAroundServiceImpl.GetCurrentUserTrips() with result BikeAround.Service.Trip[]
+[6/19/2016 11:56 AM TRACE] Entering BikeAround.Service.Impl.BikeAroundServiceImpl.GetCurrentUser()
+[6/19/2016 11:56 AM TRACE] Exiting BikeAround.Service.Impl.BikeAroundServiceImpl.GetCurrentUser() with result BikeAround.Service.User [UserID = 2]
+[6/19/2016 11:56 AM TRACE] Entering BikeAround.Service.Impl.BikeAroundServiceImpl.GetCurrentUser()
+[6/19/2016 11:56 AM TRACE] Exiting BikeAround.Service.Impl.BikeAroundServiceImpl.GetCurrentUser() with result BikeAround.Service.User [UserID = 2]
+[6/19/2016 11:56 AM TRACE] Entering BikeAround.Service.Impl.BikeAroundServiceImpl.FindAvailableBikes(2100)
+[6/19/2016 11:56 AM TRACE] Exiting BikeAround.Service.Impl.BikeAroundServiceImpl.FindAvailableBikes(2100) with result BikeAround.Service.Bike[]
+[6/19/2016 11:56 AM TRACE] Entering BikeAround.Service.Impl.BikeAroundServiceImpl.GetUser(1)
+[6/19/2016 11:56 AM TRACE] Exiting BikeAround.Service.Impl.BikeAroundServiceImpl.GetUser(1) with result BikeAround.Service.User [UserID = 1]
+[6/19/2016 11:56 AM TRACE] Entering BikeAround.Service.Impl.BikeAroundServiceImpl.GetCurrentUserTrips()
+[6/19/2016 11:56 AM TRACE] Exiting BikeAround.Service.Impl.BikeAroundServiceImpl.GetCurrentUserTrips() with result BikeAround.Service.Trip[]
+[6/19/2016 11:56 AM TRACE] Entering BikeAround.Service.Impl.BikeAroundServiceImpl.GetBike(1)
+[6/19/2016 11:56 AM TRACE] Exiting BikeAround.Service.Impl.BikeAroundServiceImpl.GetBike(1) with result BikeAround.Service.Bike [BikeID = 1]

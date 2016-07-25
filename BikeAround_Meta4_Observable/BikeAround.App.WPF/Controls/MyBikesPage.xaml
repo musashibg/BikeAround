@@ -1,0 +1,132 @@
+﻿<UserControl x:Class="BikeAround.App.Controls.MyBikesPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:vm="clr-namespace:BikeAround.App.ViewModels"
+             mc:Ignorable="d"
+             d:DataContext="{d:DesignInstance vm:MyBikesPageViewModel}">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <Label Grid.ColumnSpan="2"
+               HorizontalAlignment="Center"
+               FontSize="20"
+               FontWeight="Bold"
+               Content="My Bikes" />
+
+        <ListBox Grid.Row="1"
+                 ItemsSource="{Binding Bikes}"
+                 SelectedItem="{Binding SelectedBike}">
+            <ListBox.ItemTemplate>
+                <DataTemplate DataType="vm:BikeViewModel">
+                    <TextBlock>
+                        <TextBlock.Text>
+                            <MultiBinding StringFormat="{}{0} {1}">
+                                <Binding Path="Make" />
+                                <Binding Path="Model" />
+                            </MultiBinding>
+                        </TextBlock.Text>
+                    </TextBlock>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        <StackPanel Grid.Row="1"
+                    Grid.Column="1">
+            <Label Content="Hourly rate:" />
+            <TextBlock Margin="16,0,3,6"
+                       FontWeight="Bold"
+                       Text="{Binding SelectedBike.HourlyRate, StringFormat=F2}" />
+
+            <Label Content="Kind:" />
+            <TextBlock Margin="16,0,3,6"
+                       FontWeight="Bold"
+                       Text="{Binding SelectedBike.Kind}" />
+
+            <Label Content="Make:" />
+            <TextBlock Margin="16,0,3,6"
+                       FontWeight="Bold"
+                       Text="{Binding SelectedBike.Make}" />
+
+            <Label Content="Model:" />
+            <TextBlock Margin="16,0,3,6"
+                       FontWeight="Bold"
+                       Text="{Binding SelectedBike.Model}" />
+
+            <Label Content="Color:" />
+            <TextBlock Margin="16,0,3,6"
+                       FontWeight="Bold"
+                       Text="{Binding SelectedBike.Color}" />
+
+            <Label Content="Num. of gears:" />
+            <TextBlock Margin="16,0,3,6"
+                       FontWeight="Bold"
+                       Text="{Binding SelectedBike.Gears}" />
+
+            <Label Content="Weight:" />
+            <TextBlock Margin="16,0,3,6"
+                       FontWeight="Bold"
+                       Text="{Binding SelectedBike.Weight}" />
+
+            <Label Content="Front brake:" />
+            <TextBlock Margin="16,0,3,6"
+                       FontWeight="Bold"
+                       Text="{Binding SelectedBike.FrontBrake}" />
+
+            <Label Content="Back brake:" />
+            <TextBlock Margin="16,0,3,6"
+                       FontWeight="Bold"
+                       Text="{Binding SelectedBike.BackBrake}" />
+
+            <Label Content="Description:" />
+            <TextBlock Margin="16,0,3,6"
+                       FontWeight="Bold"
+                       TextWrapping="Wrap"
+                       Text="{Binding SelectedBike.Description}" />
+
+            <Label Content="Location - postcode:" />
+            <TextBlock Margin="16,0,3,6"
+                       FontWeight="Bold"
+                       Text="{Binding SelectedBike.LocationPostcode}" />
+
+            <Label Content="Location - address:" />
+            <TextBlock Margin="16,0,3,6"
+                       FontWeight="Bold"
+                       Text="{Binding SelectedBike.LocationAddress}" />
+        </StackPanel>
+
+        <StackPanel Grid.Row="2"
+                    Grid.ColumnSpan="2"
+                    HorizontalAlignment="Center"
+                    Orientation="Horizontal">
+            <Button IsCancel="True"
+                    Content="Back"
+                    Command="{Binding BackToMenuCommand}" />
+            <Button Content="Register new"
+                    Command="{Binding RegisterNewBikeCommand}" />
+            <Button Content="View bike trips"
+                    Command="{Binding ViewBikeTripsCommand}"
+                    CommandParameter="{Binding SelectedBike.BikeID}">
+                <Button.Style>
+                    <Style TargetType="Button"
+                           BasedOn="{StaticResource {x:Type Button}}">
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding SelectedBike}" Value="{x:Null}">
+                                <Setter Property="Visibility" Value="Hidden" />
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+        </StackPanel>
+    </Grid>
+</UserControl>

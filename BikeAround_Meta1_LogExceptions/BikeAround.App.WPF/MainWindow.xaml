@@ -1,0 +1,87 @@
+﻿<Window x:Class="BikeAround.App.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:v="clr-namespace:BikeAround.App"
+        xmlns:c="clr-namespace:BikeAround.App.Controls"
+        xmlns:vm="clr-namespace:BikeAround.App.ViewModels"
+        mc:Ignorable="d"
+        Title="Bike Around"
+        Height="900"
+        Width="1200"
+        WindowStartupLocation="CenterScreen"
+        DataContext="{x:Static v:ViewModelLocator.MainViewModel}">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <ContentControl Content="{Binding CurrentPage}">
+            <ContentControl.Resources>
+                <DataTemplate DataType="{x:Type vm:LoginPageViewModel}">
+                    <c:LoginPage />
+                </DataTemplate>
+
+                <DataTemplate DataType="{x:Type vm:RegisterUserPageViewModel}">
+                    <c:RegisterUserPage />
+                </DataTemplate>
+
+                <DataTemplate DataType="{x:Type vm:MainMenuPageViewModel}">
+                    <c:MainMenuPage />
+                </DataTemplate>
+
+                <DataTemplate DataType="{x:Type vm:MyBikesPageViewModel}">
+                    <c:MyBikesPage />
+                </DataTemplate>
+
+                <DataTemplate DataType="{x:Type vm:FindABikePageViewModel}">
+                    <c:FindABikePage />
+                </DataTemplate>
+
+                <DataTemplate DataType="{x:Type vm:MyTripsPageViewModel}">
+                    <c:MyTripsPage />
+                </DataTemplate>
+
+                <DataTemplate DataType="{x:Type vm:RegisterBikePageViewModel}">
+                    <c:RegisterBikePage />
+                </DataTemplate>
+
+                <DataTemplate DataType="{x:Type vm:BikeTripsPageViewModel}">
+                    <c:BikeTripsPage />
+                </DataTemplate>
+            </ContentControl.Resources>
+        </ContentControl>
+
+        <StackPanel Grid.Row="1"
+                    Orientation="Horizontal">
+            <StackPanel.Style>
+                <Style TargetType="StackPanel">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding CurrentUser}" Value="{x:Null}">
+                            <Setter Property="Visibility" Value="Collapsed" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </StackPanel.Style>
+
+            <Label Content="User:" />
+            <Label FontWeight="Bold"
+                   Content="{Binding CurrentUser.UserName}" />
+
+            <Label Content="Balance:" />
+            <Label FontWeight="Bold"
+                   ContentStringFormat="F2"
+                   Content="{Binding CurrentUser.Balance}" />
+
+            <Label Content="Rental offers:" />
+            <Label FontWeight="Bold"
+                   Content="{Binding CurrentUser.RentalOffers}" />
+
+            <Label Content="Total trips:" />
+            <Label FontWeight="Bold"
+                   Content="{Binding CurrentUser.TripCount}" />
+        </StackPanel>
+    </Grid>
+</Window>

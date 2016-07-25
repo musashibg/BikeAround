@@ -1,0 +1,84 @@
+﻿<UserControl x:Class="BikeAround.App.Controls.MyTripsPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:vm="clr-namespace:BikeAround.App.ViewModels"
+             mc:Ignorable="d"
+             d:DataContext="{d:DesignInstance vm:MyTripsPageViewModel}">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <Label Grid.ColumnSpan="2"
+               HorizontalAlignment="Center"
+               FontSize="20"
+               FontWeight="Bold"
+               Content="My Trips" />
+
+        <ListBox Grid.Row="1"
+                 ItemsSource="{Binding Trips}"
+                 SelectedItem="{Binding SelectedTrip}">
+            <ListBox.ItemTemplate>
+                <DataTemplate DataType="vm:TripViewModel">
+                    <TextBlock>
+                        <TextBlock.Text>
+                            <MultiBinding StringFormat="{}{0:g} - {1:g}">
+                                <Binding Path="TripStart" />
+                                <Binding Path="TripEnd" />
+                            </MultiBinding>
+                        </TextBlock.Text>
+                    </TextBlock>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        <StackPanel Grid.Row="1"
+                    Grid.Column="1">
+            <Label Content="Bike:" />
+            <TextBlock Margin="16,0,3,6"
+                       FontWeight="Bold">
+                <TextBlock.Text>
+                    <MultiBinding StringFormat="{}{0} {1}">
+                        <Binding Path="SelectedTrip.Bike.Make" />
+                        <Binding Path="SelectedTrip.Bike.Model" />
+                    </MultiBinding>
+                </TextBlock.Text>
+            </TextBlock>
+
+            <Label Content="Start:" />
+            <TextBlock Margin="16,0,3,6"
+                       FontWeight="Bold"
+                       Text="{Binding SelectedTrip.TripStart, StringFormat=g}" />
+
+            <Label Content="End:" />
+            <TextBlock Margin="16,0,3,6"
+                       FontWeight="Bold"
+                       Text="{Binding SelectedTrip.TripEnd, StringFormat=g}" />
+
+            <Label Content="Cost:" />
+            <TextBlock Margin="16,0,3,6"
+                       FontWeight="Bold"
+                       Text="{Binding SelectedTrip.TripCost, StringFormat=F2}" />
+
+            <Label Content="Service fee:" />
+            <TextBlock Margin="16,0,3,6"
+                       FontWeight="Bold"
+                       Text="{Binding SelectedTrip.ServiceFee, StringFormat=F2}" />
+        </StackPanel>
+
+        <Button Grid.Row="2"
+                Grid.ColumnSpan="2"
+                HorizontalAlignment="Center"
+                IsCancel="True"
+                Content="Back"
+                Command="{Binding BackToMenuCommand}" />
+    </Grid>
+</UserControl>
