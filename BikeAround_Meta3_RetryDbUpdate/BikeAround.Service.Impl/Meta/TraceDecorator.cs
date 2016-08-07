@@ -21,7 +21,7 @@ namespace BikeAround.Service.Impl.Meta
                 ParameterInfo parameter = parameters[i];
                 if (parameter.GetCustomAttribute<DoNotTraceAttribute>() == null)
                 {
-                    argumentStrings[i] = arguments[i].ToString();
+                    argumentStrings[i] = arguments[i]?.ToString() ?? "<null>";
                 }
                 else
                 {
